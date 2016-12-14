@@ -22,7 +22,7 @@ RUN apt-get update && apt-get install -y \
 RUN R -e "install.packages(c('shiny', 'rmarkdown'), repos='https://cloud.r-project.org/')"
 
 # install dependencies of your app
-RUN R -e "install.packages('Rmpfr', 'shinydashboard', 'shinysky', 'rhandsontable', 'DT', 'scales', 'tidyr', 'reshape2', 'shiny', repos='https://cloud.r-project.org/')"
+RUN R -e "install.packages(c('Rmpfr', 'shinydashboard', 'shinysky', 'rhandsontable', 'DT', 'scales', 'tidyr', 'reshape2', 'shiny', repos='https://cloud.r-project.org/'))"
 
 # copy the app to the image
 RUN mkdir /root/app
