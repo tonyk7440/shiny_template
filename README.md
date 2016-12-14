@@ -1,2 +1,2 @@
 # Overview
-Template for uploading to shinyproxy server
+Template for uploading to server
