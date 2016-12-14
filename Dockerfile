@@ -26,7 +26,7 @@ RUN R -e "install.packages(c('Rmpfr', 'shinydashboard', 'shinysky', 'rhandsontab
 
 # copy the app to the image
 RUN mkdir /root/app
-COPY euler /root/app
+COPY app /root/app
 
 COPY Rprofile.site /usr/lib/R/etc/
 
